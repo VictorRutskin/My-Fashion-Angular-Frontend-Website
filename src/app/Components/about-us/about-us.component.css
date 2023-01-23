@@ -1,0 +1,49 @@
+ p {
+     font-size: 50px;
+     font-weight: bold;
+     font-family: 'Courier New', Courier, monospace;
+     color: black;
+     margin: auto;
+
+     /* Optional Styling */
+     padding: 20px;
+     animation: grow-and-shrink 15s ease-in-out infinite;
+     text-shadow: -2px 0 #ff0ecb, 0 2px #ff0ecb, 2px 0 #00bfff, 0 -2px #00bfff;
+     visibility: visible;
+
+
+ }
+
+ .column {
+  float: center;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ @keyframes grow-and-shrink {
+     0% {
+         transform: scale(1);
+     }
+
+     25% {
+         transform: scale(1.1);
+     }
+
+     50% {
+         transform: scale(1);
+     }
+
+     75% {
+         transform: scale(0.7);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+ }

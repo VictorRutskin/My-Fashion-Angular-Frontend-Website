@@ -1,0 +1,37 @@
+/* Add some padding and a background color */
+nav {
+    padding: 16px;
+    background-color: #00bfff;
+    border: #ff0ecb;
+    border-width: 5px;
+    border-radius: 20px;
+    border-style: groove;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 30px;
+    
+    padding: 0.5em 1em;
+  margin-right: 1em;
+    justify-content: space-between;
+
+
+}
+
+nav a {
+    color: #ff0ecb;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+nav a.active {
+    color: yellow;
+}
+
+nav a:hover {
+    color: #ffd600;
+}
+
+nav img {
+    height: 32px;
+    margin-right: 16px;
+}

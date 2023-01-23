@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background-image: url('src\assets\Gifs\fashiongif 1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+}
+
+/*set up classes for different sections within the main section*/
+.section1 {
+    background-color: #ff0ecb;
+    color: white;
+    padding: 1em;
+}
+
+.section2 {
+    background-color: #0eff2e;
+    color: white;
+    padding: 1em;
+}
+
+.section3 {
+    background-color: #ff0000;
+    color: white;
+    padding: 1em;
+}
