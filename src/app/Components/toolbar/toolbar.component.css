@@ -1,26 +1,32 @@
 /* Add some padding and a background color */
 nav {
-    padding: 16px;
+    padding: 15px 10px;
     background-color: #00bfff;
     border: #ff0ecb;
     border-width: 5px;
     border-radius: 20px;
     border-style: groove;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 1000;
+    font-weight: bold;
     font-size: 30px;
-    
-    padding: 0.5em 1em;
-  margin-right: 1em;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-
-
 }
 
 nav a {
     color: #ff0ecb;
     text-decoration: none;
+
     margin-right: 16px;
+    border-right: dotted ;
+    padding-right: 16px;
+    border-top: dotted;
+    border-bottom: dotted;
+    margin-left: 16px;
+    border-left: dotted ;
+    padding-left: 16px;
+
 }
 
 nav a.active {
