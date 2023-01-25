@@ -1,5 +1,3 @@
 <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a *ngFor="let Link of Links" href={{Link.href}}>{{Link.Text}}</a>
 </nav>

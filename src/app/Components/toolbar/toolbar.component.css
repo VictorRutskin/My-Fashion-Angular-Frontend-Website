@@ -1,6 +1,6 @@
-/* Add some padding and a background color */
 nav {
-    padding: 15px 10px;
+    width: 97%; 
+    padding: 15px ;
     background-color: #00bfff;
     border: #ff0ecb;
     border-width: 5px;
@@ -12,7 +12,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    z-index: 1;
 }
+
 
 nav a {
     color: #ff0ecb;

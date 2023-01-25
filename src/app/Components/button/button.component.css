@@ -1,20 +1,39 @@
 .cool-button {
-  background-color: #00bfff; 
+  background-color: #00bfff;
   border: 3px solid #ff0ecb;
   color: #ff0ecb;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
-  margin: 4px 2px;
+  font-size: 50px;
   cursor: pointer;
+
+  margin: 50px;
+
+  margin-right: 16px;
+  border-right: dotted;
+  padding-right: 16px;
+  border-top: dotted;
+  border-bottom: dotted;
+  margin-left: 16px;
+  border-left: dotted;
+  padding-left: 16px;
 
 }
 
 .cool-button:hover {
-  background-color: #ff0ecb; 
-    border: 3px solid #00bfff; 
-  color: #00bfff; 
-  transform: scale(1.1);
+  background-color: #ff0ecb;
+  border: 3px solid #00bfff;
+  color: #00bfff;
+  transform: scale(1.6);
+
+  margin-right: 16px;
+  border-right: dotted;
+  padding-right: 16px;
+  border-top: dotted;
+  border-bottom: dotted;
+  margin-left: 16px;
+  border-left: dotted;
+  padding-left: 16px;
 }

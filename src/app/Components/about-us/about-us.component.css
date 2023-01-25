@@ -10,8 +10,6 @@
      animation: grow-and-shrink 15s ease-in-out infinite;
      text-shadow: -2px 0 #ff0ecb, 0 2px #ff0ecb, 2px 0 #00bfff, 0 -2px #00bfff;
      visibility: visible;
-
-
  }
 
  .column {

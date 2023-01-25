@@ -9,6 +9,8 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { OurModelsComponent } from './Components/our-models/our-models.component';
+import { AboutUsButtonComponent } from './Buttons/about-us-button/about-us-button.component';
+import { OurModelButtonComponent } from './Buttons/our-model-button/our-model-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { OurModelsComponent } from './Components/our-models/our-models.component
     FooterComponent,
     ToolbarComponent,
     AboutUsComponent,
-    OurModelsComponent
+    OurModelsComponent,
+    AboutUsButtonComponent,
+    OurModelButtonComponent
   ],
   imports: [
     BrowserModule,

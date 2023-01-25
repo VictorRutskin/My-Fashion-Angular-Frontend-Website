@@ -1,6 +1,17 @@
 footer {
-    background-color: #00bfff;
-    color: white;
+    color: #ff0ecb;
+    text-decoration: none;
 
-    padding: 10px;
+    margin-right: 16px;
+    border-right: dotted ;
+    padding-right: 16px;
+    border-top: dotted;
+    border-bottom: dotted;
+    margin-left: 16px;
+    border-left: dotted ;
+    padding-left: 16px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
 }

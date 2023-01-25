@@ -1,25 +1,32 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css']
 })
-export class ButtonComponent {
-
-
-  Visble = true;
-
-  toggleVisbillity() {
-    if (this.Visble == false) {
-      this.Visble = true;
-      return true;
+export class ButtonComponent implements OnInit {
+  selectedComponent: string = 'about-us';
+  toggleComponent() {
+    if (this.Content == "1") {
+      this.selectedComponent = '1'
     }
-    else {
-      this.Visble = false;
-      return false;
+    else
+    {
+      this.selectedComponent = '2'
     }
   }
 
+  ngOnInit() {
+    this.toggleComponent();
+  }
 
+  @Input() buttonText: string = "";
+  @Input() Content: string = "";
+
+  visible = false;
+
+  toggleVisibility() {
+    this.visible = !this.visible;
+  }
 }

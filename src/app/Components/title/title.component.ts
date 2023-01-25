@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./title.component.css']
 })
 export class TitleComponent {
-
+TitleText ="Lashaka Fashion"
 }
