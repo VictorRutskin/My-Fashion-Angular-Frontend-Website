@@ -1,7 +1,7 @@
 .cool-button {
-  background-color: #00bfff;
-  border: 3px solid #ff0ecb;
-  color: #ff0ecb;
+  background-color: #7fc4fa;
+  border: 3px solid #de3c78;
+  color: #de3c78;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -9,7 +9,7 @@
   font-size: 50px;
   cursor: pointer;
 
-  margin: 50px;
+  margin: 200px;
 
   margin-right: 16px;
   border-right: dotted;
@@ -23,9 +23,9 @@
 }
 
 .cool-button:hover {
-  background-color: #ff0ecb;
-  border: 3px solid #00bfff;
-  color: #00bfff;
+  background-color: #de3c78;
+  border: 3px solid #7fc4fa;
+  color: #7fc4fa;
   transform: scale(1.6);
 
   margin-right: 16px;

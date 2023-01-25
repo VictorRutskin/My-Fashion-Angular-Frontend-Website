@@ -8,7 +8,7 @@
      /* Optional Styling */
      padding: 20px;
      animation: grow-and-shrink 15s ease-in-out infinite;
-     text-shadow: -2px 0 #ff0ecb, 0 2px #ff0ecb, 2px 0 #00bfff, 0 -2px #00bfff;
+     text-shadow: -2px 0 #de3c78, 0 2px #de3c78, 2px 0 #7fc4fa, 0 -2px #7fc4fa;
      visibility: visible;
  }
 

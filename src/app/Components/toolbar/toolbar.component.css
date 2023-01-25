@@ -1,8 +1,8 @@
 nav {
     width: 97%; 
     padding: 15px ;
-    background-color: #00bfff;
-    border: #ff0ecb;
+    background-color: #7fc4fa;
+    border: #de3c78;
     border-width: 5px;
     border-radius: 20px;
     border-style: groove;
@@ -19,7 +19,7 @@ nav {
 
 
 nav a {
-    color: #ff0ecb;
+    color: #de3c78;
     text-decoration: none;
 
     margin-right: 16px;
@@ -34,11 +34,11 @@ nav a {
 }
 
 nav a.active {
-    color: yellow;
+    color: #835ce3;
 }
 
 nav a:hover {
-    color: #ffd600;
+    color: #835ce3;
 }
 
 nav img {
