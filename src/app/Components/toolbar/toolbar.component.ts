@@ -17,4 +17,6 @@ export class ToolbarComponent {
     { href: '#', Text: 'Shop' },
     { href: '#', Text: 'Contact' },
   ];
+
+  isCollapsed = false;
 }

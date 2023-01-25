@@ -1,3 +1,11 @@
+<!-- <nav>
+  <a *ngFor="let Link of Links" href="{{ Link.href }}">{{ Link.Text }}</a>
+</nav> -->
+
 <nav>
-    <a *ngFor="let Link of Links" href={{Link.href}}>{{Link.Text}}</a>
-</nav>
+    <div *ngFor="let Link of Links">
+      <a href="{{ Link.href }}" *ngIf="!isCollapsed">{{ Link.Text }}</a>
+    </div>
+  </nav>
+
+  <!-- need to make when click on about us/models to # to right place on page, also make sollapsing navbar. -->

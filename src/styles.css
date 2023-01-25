@@ -1,49 +1,49 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
 
-    background-image: url('src\assets\Images\bg1.jpg');
-    background-size:auto;
-    background-repeat:repeat;
+  background-image: url("src\assets\Images\bg1.jpg");
+  background-size: auto;
+  background-repeat: repeat-y;
 }
 
 header {
-    color: white;
-    padding: 20px;
+  color: white;
+  padding: 20px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 footer {
-    background-color: #7fc4fa;
-    color: white;
-    padding: 10px;
+  background-color: #7fc4fa;
+  color: white;
+  padding: 10px;
 }
 
 /*set up classes for different sections within the main section*/
 .section1 {
-    background-color: #de3c78;
-    color: white;
-    padding: 1em;
+  background-color: #de3c78;
+  color: white;
+  padding: 1em;
 }
 
 .section2 {
-    background-color: #0eff2e;
-    color: white;
-    padding: 1em;
+  background-color: #0eff2e;
+  color: white;
+  padding: 1em;
 }
 
 .section3 {
-    background-color: #ff0000;
-    color: white;
-    padding: 1em;
+  background-color: #ff0000;
+  color: white;
+  padding: 1em;
 }

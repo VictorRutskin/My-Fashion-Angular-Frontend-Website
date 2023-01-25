@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CoolWebsite';
+  MainColor='#7fc4fa'
+  Semicolor='#de3c78'
 }

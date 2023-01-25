@@ -1,47 +1,45 @@
 nav {
-    width: 97%; 
-    padding: 15px ;
-    background-color: #7fc4fa;
-    border: #de3c78;
-    border-width: 5px;
-    border-radius: 20px;
-    border-style: groove;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 10px;
-    z-index: 1;
+  width: 97%;
+  padding: 15px;
+  background-color: #7fc4fa;
+  border: #de3c78;
+  border-width: 5px;
+  border-radius: 20px;
+  border-style: groove;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
 }
 
-
 nav a {
-    color: #de3c78;
-    text-decoration: none;
+  color: #de3c78;
+  text-decoration: none;
 
-    margin-right: 16px;
-    border-right: dotted ;
-    padding-right: 16px;
-    border-top: dotted;
-    border-bottom: dotted;
-    margin-left: 16px;
-    border-left: dotted ;
-    padding-left: 16px;
-
+  margin-right: 16px;
+  border-right: dotted;
+  padding-right: 16px;
+  border-top: dotted;
+  border-bottom: dotted;
+  margin-left: 16px;
+  border-left: dotted;
+  padding-left: 16px;
 }
 
 nav a.active {
-    color: #835ce3;
+  color: #835ce3;
 }
 
 nav a:hover {
-    color: #835ce3;
+  color: #835ce3;
 }
 
 nav img {
-    height: 32px;
-    margin-right: 16px;
+  height: 32px;
+  margin-right: 16px;
 }
