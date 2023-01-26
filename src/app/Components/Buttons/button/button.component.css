@@ -66,3 +66,16 @@
     transform: rotate(-360deg);
   }
 }
+
+* {
+  animation: entry-animation 2s linear;
+}
+
+@keyframes entry-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,17 +1,21 @@
 footer {
-    color: #de3c78;
-    text-decoration: none;
+  color: #de3c78;
+  text-decoration: none;
 
-    margin-right: 16px;
-    border-right: dotted ;
-    padding-right: 16px;
-    border-top: dotted;
-    border-bottom: dotted;
-    margin-left: 16px;
-    border-left: dotted ;
-    padding-left: 16px;
+  margin-right: 16px;
+  border-right: dotted;
+  padding-right: 16px;
+  border-top: dotted;
+  border-bottom: dotted;
+  margin-left: 16px;
+  border-left: dotted;
+  padding-left: 16px;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+
+  margin-top: 250px;
+  position: relative;
+  bottom: 0;
 }
