@@ -1,4 +1,7 @@
 .cool-button {
+  width: 500px;
+  height: 200px;
+
   border: 3px solid #de3c78;
   color: #de3c78;
   background-color: #7fc4fa;
@@ -7,7 +10,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 50px;
+  font-size: 80px;
   cursor: pointer;
 
   margin: 200px;
@@ -20,7 +23,6 @@
   margin-left: 16px;
   border-left: dotted;
   padding-left: 16px;
-
 }
 
 .cool-button:hover {
@@ -37,4 +39,30 @@
   margin-left: 16px;
   border-left: dotted;
   padding-left: 16px;
+}
+
+.spin-right {
+  animation: spinRight 8s linear infinite;
+}
+
+.spin-left {
+  animation: spinLeft 8s linear infinite;
+}
+
+@keyframes spinRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
