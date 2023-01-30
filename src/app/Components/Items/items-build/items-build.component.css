@@ -2,6 +2,7 @@ table {
     width: 100%;
     border-collapse:collapse;
     margin-top: 100px;
+    
   }
   
   th,
@@ -12,11 +13,15 @@ table {
     padding: 20px;
     text-align: left;
     font-size: 60px;
+    background-color: #7fc4fa;
+    background: rgba(222,	60	,120,0.3);
+
   }
   
   th {
     background-color: #de3c78;
     font-weight: bold;
+
   }
   
   td img {
@@ -49,6 +54,8 @@ table {
   .item-image {
       color: green;
       font-weight: bold;
+      border: 5px solid #de3c78;
+      display: inline-block;
     }
   
   button {

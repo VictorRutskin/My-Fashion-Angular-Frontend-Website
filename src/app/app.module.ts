@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+ 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './Components/title/title.component';
@@ -15,7 +15,12 @@ import { ContactPageComponent } from './Pages/contact-page/contact-page.componen
 import { ButtonComponent } from './Components/Buttons/button/button.component';
 import { AboutUsButtonComponent } from './Components/Buttons/about-us-button/about-us-button.component';
 import { OurModelButtonComponent } from './Components/Buttons/our-model-button/our-model-button.component';
-import { ItemsComponent } from './Components/items/items.component';
+import { ItemsHeadwearComponent } from './Components/Items/items-headwear/items-headwear.component';
+import { ItemsShirtsComponent } from './Components/Items/items-shirts/items-shirts.component';
+import { ItemsPantsComponent } from './Components/Items/items-pants/items-pants.component';
+import { ShoesComponent } from './shoes/shoes.component';
+import { ItemsShoesComponent } from './Components/Items/items-shoes/items-shoes.component';
+import { ItemsBuildComponent } from './Components/Items/items-build/items-build.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { ItemsComponent } from './Components/items/items.component';
     HomePageComponent,
     ShopPageComponent,
     ContactPageComponent,
-    ItemsComponent,
+    ItemsHeadwearComponent,
+    ItemsShirtsComponent,
+    ItemsPantsComponent,
+    ShoesComponent,
+    ItemsShoesComponent,
+    ItemsBuildComponent,
   ],
   imports: [
     BrowserModule,

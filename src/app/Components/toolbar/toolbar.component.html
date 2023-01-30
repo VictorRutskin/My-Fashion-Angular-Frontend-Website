@@ -1,10 +1,8 @@
-<!-- <nav>
-  <a *ngFor="let Link of Links" href="{{ Link.href }}">{{ Link.Text }}</a>
-</nav> -->
+
 
 <nav>
     <div *ngFor="let Link of Links">
-      <a href="{{ Link.href }}" *ngIf="!isCollapsed">{{ Link.Text }}</a>
+      <a [routerLink]="Link.href" *ngIf="!isCollapsed">{{ Link.Text }}</a>
     </div>
   </nav>
 

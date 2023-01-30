@@ -12,10 +12,10 @@ export class ToolbarComponent {
   ContactText ="Contact" // Contact Page
 
   Links = [
-    { href: '#', Text: 'Home' },
-    { href: '#', Text: 'About' },
-    { href: '#', Text: 'Shop' },
-    { href: '#', Text: 'Contact' },
+    { href: '/Home', Text: 'Home' },
+    { href: '/About', Text: 'About' },
+    { href: '/Shop', Text: 'Shop' },
+    { href: '/Contact', Text: 'Contact' },
   ];
 
   isCollapsed = false;
