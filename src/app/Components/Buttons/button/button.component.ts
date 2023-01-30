@@ -7,13 +7,13 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   selectedComponent: string = 'about-us';
-  spinDirection: string = 'spin-right';
+  spinDirection: string = '';
 
   toggleComponent() {
     if (this.Content === "1") {
       this.selectedComponent = '1';
       this.spinDirection = 'spin-right';
-    } else {
+    } else if (this.Content === "2") {
       this.selectedComponent = '2';
       this.spinDirection = 'spin-left';
     }

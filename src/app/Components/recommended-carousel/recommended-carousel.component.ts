@@ -1,41 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-recommended-carousel',
   templateUrl: './recommended-carousel.component.html',
   styleUrls: ['./recommended-carousel.component.css'],
-  animations: [
-    trigger('slideState', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [
-        style({ transform: 'translateX(-100%)' }),
-        animate(1000)
-      ]),
-      transition('* => void', [
-        animate(1000, style({ transform: 'translateX(100%)' }))
-      ])
-    ])
-  ]
 })
 export class RecommendedCarouselComponent implements OnInit {
   slides = [
-    { imageUrl: 'https://picsum.photos/id/10/600/300', title: 'Slide 1', description: 'Description for slide 1' },
-    { imageUrl: 'https://picsum.photos/id/11/600/300', title: 'Slide 2', description: 'Description for slide 2' },
-    { imageUrl: 'https://picsum.photos/id/12/600/300', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM1.jpg', title: 'Slide 1', description: 'Description for slide 1' },
+    { imageUrl: 'assets/Images/FashionModels/FM2.jpg', title: 'Slide 2', description: 'Description for slide 2' },
+    { imageUrl: 'assets/Images/FashionModels/FM3.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM4.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM5.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM6.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM7.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM9.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM10.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM11.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM12.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM13.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM14.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM15.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM16.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+    { imageUrl: 'assets/Images/FashionModels/FM17.jpg', title: 'Slide 3', description: 'Description for slide 3' },
+
   ];
   currentSlide = this.slides[0];
   currentIndex = 0;
-  slideState = 'in';
 
   ngOnInit() {
     setInterval(() => {
-      this.slideState = 'void';
-      setTimeout(() => {
-        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-        this.currentSlide = this.slides[this.currentIndex];
-        this.slideState = 'in';
-      }, 1000);
-    }, 5000);
+      this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+      this.currentSlide = this.slides[this.currentIndex];
+    }, 2000);
   }
 }

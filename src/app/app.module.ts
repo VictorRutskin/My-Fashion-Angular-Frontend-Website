@@ -28,6 +28,8 @@ import { ShopTitleComponent } from './Components/Titles/shop-title/shop-title.co
 import { ContactTitleComponent } from './Components/Titles/contact-title/contact-title.component';
 import { RecommendedCarouselComponent } from './Components/recommended-carousel/recommended-carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BuyNowButtonComponent } from './Components/Buttons/buy-now-button/buy-now-button.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +56,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AboutTitleComponent,
     ShopTitleComponent,
     ContactTitleComponent,
-    RecommendedCarouselComponent
+    RecommendedCarouselComponent,
+    BuyNowButtonComponent,
   ],
   imports: [
     BrowserModule,

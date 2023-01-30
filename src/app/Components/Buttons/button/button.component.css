@@ -13,8 +13,6 @@
   font-size: 80px;
   cursor: pointer;
 
-  margin: 200px;
-
   margin-right: 16px;
   border-right: dotted;
   padding-right: 16px;
@@ -23,6 +21,9 @@
   margin-left: 16px;
   border-left: dotted;
   padding-left: 16px;
+
+  opacity: 0.8;
+
 }
 
 .cool-button:hover {
@@ -39,14 +40,18 @@
   margin-left: 16px;
   border-left: dotted;
   padding-left: 16px;
+
 }
 
 .spin-right {
   animation: spinRight 8s linear infinite;
+  margin: 200px;
+
 }
 
 .spin-left {
   animation: spinLeft 8s linear infinite;
+  margin: 200px;
 }
 
 @keyframes spinRight {
@@ -76,6 +81,6 @@
     opacity: 0;
   }
   to {
-    opacity: 1;
+  opacity: 0.8;
   }
 }
