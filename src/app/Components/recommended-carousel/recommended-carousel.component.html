@@ -1,0 +1,9 @@
+<div class="carousel-container">
+    <ng-container *ngIf="currentSlide">
+      <img [src]="currentSlide.imageUrl" [alt]="currentSlide.title" [@slideState]="slideState">
+      <div class="carousel-content">
+        <h3 class="title">{{ currentSlide.title }}</h3>
+        <p class="description">{{ currentSlide.description }}</p>
+      </div>
+    </ng-container>
+  </div>

@@ -26,7 +26,8 @@ import { HomeTitleComponent } from './Components/Titles/home-title/home-title.co
 import { AboutTitleComponent } from './Components/Titles/about-title/about-title.component';
 import { ShopTitleComponent } from './Components/Titles/shop-title/shop-title.component';
 import { ContactTitleComponent } from './Components/Titles/contact-title/contact-title.component';
-
+import { RecommendedCarouselComponent } from './Components/recommended-carousel/recommended-carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,13 +53,16 @@ import { ContactTitleComponent } from './Components/Titles/contact-title/contact
     HomeTitleComponent,
     AboutTitleComponent,
     ShopTitleComponent,
-    ContactTitleComponent
+    ContactTitleComponent,
+    RecommendedCarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,RecommendedCarouselComponent]
+
 })
 export class AppModule { }
