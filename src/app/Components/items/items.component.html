@@ -1,0 +1,15 @@
+<table>
+  <tbody>
+    <tr *ngFor="let item of items">
+      <td>
+        <img [src]="item.image">
+        <div>
+          <p class="item-name">{{ item.name }}</p>
+          <p>{{ item.description }}</p>
+        </div>
+      </td>
+      <td>{{ item.price }}</td>
+      <td><button (click)="addToCart(item)">Add to Cart</button></td>
+    </tr>
+  </tbody>
+</table>

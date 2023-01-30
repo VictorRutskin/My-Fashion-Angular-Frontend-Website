@@ -15,6 +15,7 @@ import { ContactPageComponent } from './Pages/contact-page/contact-page.componen
 import { ButtonComponent } from './Components/Buttons/button/button.component';
 import { AboutUsButtonComponent } from './Components/Buttons/about-us-button/about-us-button.component';
 import { OurModelButtonComponent } from './Components/Buttons/our-model-button/our-model-button.component';
+import { ItemsComponent } from './Components/items/items.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { OurModelButtonComponent } from './Components/Buttons/our-model-button/o
     AboutPageComponent,
     HomePageComponent,
     ShopPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ItemsComponent,
   ],
   imports: [
     BrowserModule,
