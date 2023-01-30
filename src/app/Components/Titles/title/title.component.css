@@ -1,0 +1,63 @@
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #7fc4fa;
+  text-shadow: -10px -10px #ff8c00;
+  margin-bottom: 50px;
+  font-family: "Courier New", Courier, monospace;
+
+  animation: neon 8s ease-in-out infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -10px -10px #8c6af2;
+  }
+
+  25% {
+    text-shadow: 10px -10px #a757d0;
+  }
+
+  50% {
+    text-shadow: 10px 10px #ba4ba9;
+  }
+
+  75% {
+    text-shadow: -10px 10px #de3c78;
+  }
+
+  100% {
+    text-shadow: -10px -10px #8c6af2;
+  }
+}
+
+.spin{
+    font-size: 200px;
+
+    animation: move 8s ease-in-out infinite;
+
+}
+
+@keyframes move {
+    0% {
+        text-shadow: -10px -10px #8c6af2;
+    }
+
+    25% {
+        text-shadow: 10px -10px #a757d0;
+    }
+
+    50% {
+        text-shadow: 10px 10px #ba4ba9;
+        transform: scale(0.5);
+    }
+
+    75% {
+        text-shadow: -10px 10px #de3c78;
+    }
+
+    100% {
+        text-shadow: -10px -10px #8c6af2;
+    }
+}
