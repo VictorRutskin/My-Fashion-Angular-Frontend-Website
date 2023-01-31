@@ -10,7 +10,7 @@ table {
     border-width: 8px;
     border-color: #de3c78;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     font-size: 60px;
     background-color: #7fc4fa;
     background: rgba(222,	60	,120,0.3);
@@ -49,8 +49,30 @@ table {
     }
   
   .item-price {
-    color: green;
+    color: #7fc4fa;
     font-weight: bold;
+    font-size: 90px;
+    -webkit-text-stroke-width: 7px;
+    -webkit-text-stroke: cyan;
+    -webkit-text-stroke-color: cyan;
+    -webkit-text-stroke-width: 5px;
+    
+    animation: StaticNeonEffect 6s ease-in-out infinite;
+  }
+  
+  @keyframes StaticNeonEffect {
+    0% {
+      color: blue;
+      -webkit-text-stroke-color: #7fc4fa;
+    }
+    50% {
+      color: #de3c78;
+      -webkit-text-stroke-color: pink;
+    }
+    100% {
+      color: blue;
+      -webkit-text-stroke-color: #7fc4fa;
+    }
   }
   
   .item-image {

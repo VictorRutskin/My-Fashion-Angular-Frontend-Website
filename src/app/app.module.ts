@@ -34,6 +34,7 @@ import { ShopHeadwearComponent } from './Pages/Shop Pages/shop-headwear/shop-hea
 import { ShopShirtsComponent } from './Pages/Shop Pages/shop-shirts/shop-shirts.component';
 import { ShopPantsComponent } from './Pages/Shop Pages/shop-pants/shop-pants.component';
 import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-foot-wear.component';
+import { AddtocartButtonComponent } from './Components/Buttons/addtocart-button/addtocart-button.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-fo
     ShopShirtsComponent,
     ShopPantsComponent,
     ShopFootWearComponent,
+    AddtocartButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

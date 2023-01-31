@@ -1,15 +1,22 @@
-th,
-td {
+th {
   border-style: solid;
   border-width: 8px;
   border-color: #de3c78;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   font-size: 60px;
   background-color: #7fc4fa;
+  color: black;
   background: rgba(222, 60, 120, 0.3);
-}
-
-th {
   font-weight: bold;
-}
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Courier New", Courier, monospace;
+
+  }
+  
+  th:hover {
+  transform: scale(1.05);
+  background: rgba(222, 60, 120, 0.5);
+  cursor: pointer;
+  }

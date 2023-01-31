@@ -10,7 +10,7 @@
           </div>
         </td>
         <td class="item-price">{{ item.price }}</td>
-        <td><button (click)="addToCart(item)">Add to Cart</button></td>
+        <td><app-addtocart-button></app-addtocart-button></td>
         <td *ngIf="List[i + 1]">
           <img class="item-image" [src]="List[i + 1].image">
           <div>
@@ -19,7 +19,7 @@
           </div>
         </td>
         <td class="item-price" *ngIf="List[i + 1]">{{ List[i + 1].price }}</td>
-        <td *ngIf="List[i + 1]"><button (click)="addToCart(List[i + 1])">Add to Cart</button></td>
+        <td *ngIf="List[i + 1]"><app-addtocart-button></app-addtocart-button></td>
       </tr>
     </ng-container>
   </tbody>
