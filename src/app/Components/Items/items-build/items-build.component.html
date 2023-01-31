@@ -1,6 +1,6 @@
 <table>
   <tbody>
-    <ng-container *ngFor="let item of Headwearitems; let i = index;">
+    <ng-container *ngFor="let item of List; let i = index;">
       <tr *ngIf="i % 2 === 0">
         <td>
           <img class="item-image" [src]="item.image">
@@ -11,15 +11,15 @@
         </td>
         <td class="item-price">{{ item.price }}</td>
         <td><button (click)="addToCart(item)">Add to Cart</button></td>
-        <td *ngIf="Headwearitems[i + 1]">
-          <img class="item-image" [src]="Headwearitems[i + 1].image">
+        <td *ngIf="List[i + 1]">
+          <img class="item-image" [src]="List[i + 1].image">
           <div>
-            <p class="item-name">{{ Headwearitems[i + 1].name }}</p>
-            <p class="item-description">{{ Headwearitems[i + 1].description }}</p>
+            <p class="item-name">{{ List[i + 1].name }}</p>
+            <p class="item-description">{{ List[i + 1].description }}</p>
           </div>
         </td>
-        <td class="item-price" *ngIf="Headwearitems[i + 1]">{{ Headwearitems[i + 1].price }}</td>
-        <td *ngIf="Headwearitems[i + 1]"><button (click)="addToCart(Headwearitems[i + 1])">Add to Cart</button></td>
+        <td class="item-price" *ngIf="List[i + 1]">{{ List[i + 1].price }}</td>
+        <td *ngIf="List[i + 1]"><button (click)="addToCart(List[i + 1])">Add to Cart</button></td>
       </tr>
     </ng-container>
   </tbody>

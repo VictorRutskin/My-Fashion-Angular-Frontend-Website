@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
- 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TitleComponent } from './Components/Titles/title/title.component';
 import { FooterComponent } from './Components/footer/footer.component';
-import { ToolbarComponent } from './Components/toolbar/toolbar.component';
+import { ToolbarComponent } from './Components/Navigators/toolbar/toolbar.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { OurModelsComponent } from './Components/our-models/our-models.component';
 import { AboutPageComponent } from './Pages/about-page/about-page.component';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
-import { ShopPageComponent } from './Pages/shop-page/shop-page.component';
+import { ShopPageComponent } from './Pages/Shop Pages/shop-page/shop-page.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
 import { ButtonComponent } from './Components/Buttons/button/button.component';
 import { AboutUsButtonComponent } from './Components/Buttons/about-us-button/about-us-button.component';
@@ -29,6 +29,11 @@ import { ContactTitleComponent } from './Components/Titles/contact-title/contact
 import { RecommendedCarouselComponent } from './Components/recommended-carousel/recommended-carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BuyNowButtonComponent } from './Components/Buttons/buy-now-button/buy-now-button.component';
+import { ShopNavigatorComponent } from './Components/Navigators/shop-navigator/shop-navigator.component';
+import { ShopHeadwearComponent } from './Pages/Shop Pages/shop-headwear/shop-headwear.component';
+import { ShopShirtsComponent } from './Pages/Shop Pages/shop-shirts/shop-shirts.component';
+import { ShopPantsComponent } from './Pages/Shop Pages/shop-pants/shop-pants.component';
+import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-foot-wear.component';
 
 @NgModule({
   declarations: [
@@ -58,14 +63,14 @@ import { BuyNowButtonComponent } from './Components/Buttons/buy-now-button/buy-n
     ContactTitleComponent,
     RecommendedCarouselComponent,
     BuyNowButtonComponent,
+    ShopNavigatorComponent,
+    ShopHeadwearComponent,
+    ShopShirtsComponent,
+    ShopPantsComponent,
+    ShopFootWearComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
-  bootstrap: [AppComponent,RecommendedCarouselComponent]
-
+  bootstrap: [AppComponent, RecommendedCarouselComponent],
 })
-export class AppModule { }
+export class AppModule {}

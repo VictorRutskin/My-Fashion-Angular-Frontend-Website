@@ -1,0 +1,16 @@
+th,
+td {
+  border-style: solid;
+  border-width: 8px;
+  border-color: #de3c78;
+  padding: 20px;
+  text-align: left;
+  font-size: 60px;
+  background-color: #7fc4fa;
+  background: rgba(222, 60, 120, 0.3);
+}
+
+th {
+  background-color: #de3c78;
+  font-weight: bold;
+}

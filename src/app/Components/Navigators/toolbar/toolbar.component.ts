@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent {
-  HomeText ="Home" // Home Page
-  AboutText ="About" // About Us Page
-  ShopText ="Shop" //Shop Page
-  ContactText ="Contact" // Contact Page
-
   Links = [
     { href: '/Home', Text: 'Home' },
     { href: '/About', Text: 'About' },
