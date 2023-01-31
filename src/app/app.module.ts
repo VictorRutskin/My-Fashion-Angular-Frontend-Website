@@ -18,7 +18,6 @@ import { OurModelButtonComponent } from './Components/Buttons/our-model-button/o
 import { ItemsHeadwearComponent } from './Components/Items/items-headwear/items-headwear.component';
 import { ItemsShirtsComponent } from './Components/Items/items-shirts/items-shirts.component';
 import { ItemsPantsComponent } from './Components/Items/items-pants/items-pants.component';
-import { ShoesComponent } from './shoes/shoes.component';
 import { ItemsShoesComponent } from './Components/Items/items-shoes/items-shoes.component';
 import { ItemsBuildComponent } from './Components/Items/items-build/items-build.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
@@ -35,6 +34,8 @@ import { ShopShirtsComponent } from './Pages/Shop Pages/shop-shirts/shop-shirts.
 import { ShopPantsComponent } from './Pages/Shop Pages/shop-pants/shop-pants.component';
 import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-foot-wear.component';
 import { AddtocartButtonComponent } from './Components/Buttons/addtocart-button/addtocart-button.component';
+import { ItemsAllComponent } from './Components/Items/items-all/items-all.component';
+import { ShopAllComponent } from './Pages/Shop Pages/shop-all/shop-all.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,6 @@ import { AddtocartButtonComponent } from './Components/Buttons/addtocart-button/
     ItemsHeadwearComponent,
     ItemsShirtsComponent,
     ItemsPantsComponent,
-    ShoesComponent,
     ItemsShoesComponent,
     ItemsBuildComponent,
     ContactUsComponent,
@@ -70,6 +70,8 @@ import { AddtocartButtonComponent } from './Components/Buttons/addtocart-button/
     ShopPantsComponent,
     ShopFootWearComponent,
     AddtocartButtonComponent,
+    ItemsAllComponent,
+    ShopAllComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

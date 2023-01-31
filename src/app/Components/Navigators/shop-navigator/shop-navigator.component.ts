@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ShopNavigatorComponent {
   Links = [
+    { href: '/Shop/All', Text: 'All' },
     { href: '/Shop/Headwear', Text: 'Headwear' },
     { href: '/Shop/Bodywear', Text: 'Bodywear' },
     { href: '/Shop/Legwear', Text: 'Legwear' },

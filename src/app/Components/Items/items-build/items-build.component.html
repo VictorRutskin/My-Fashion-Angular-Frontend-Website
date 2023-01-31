@@ -1,25 +1,16 @@
 <table>
   <tbody>
     <ng-container *ngFor="let item of List; let i = index;">
-      <tr *ngIf="i % 2 === 0">
+      <tr>
         <td>
           <img class="item-image" [src]="item.image">
           <div>
             <p class="item-name">{{ item.name }}</p>
             <p class="item-description">{{ item.description }}</p>
+            <p class="item-price">{{ item.price }}</p>
+            <app-addtocart-button></app-addtocart-button>
           </div>
         </td>
-        <td class="item-price">{{ item.price }}</td>
-        <td><app-addtocart-button></app-addtocart-button></td>
-        <td *ngIf="List[i + 1]">
-          <img class="item-image" [src]="List[i + 1].image">
-          <div>
-            <p class="item-name">{{ List[i + 1].name }}</p>
-            <p class="item-description">{{ List[i + 1].description }}</p>
-          </div>
-        </td>
-        <td class="item-price" *ngIf="List[i + 1]">{{ List[i + 1].price }}</td>
-        <td *ngIf="List[i + 1]"><app-addtocart-button></app-addtocart-button></td>
       </tr>
     </ng-container>
   </tbody>

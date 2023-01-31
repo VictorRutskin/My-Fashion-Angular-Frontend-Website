@@ -8,6 +8,7 @@ import { HomePageComponent } from './Pages/home-page/home-page.component';
 import { AboutPageComponent } from './Pages/about-page/about-page.component';
 import { ShopPageComponent } from './Pages/Shop Pages/shop-page/shop-page.component';
 import { ContactPageComponent } from './Pages/contact-page/contact-page.component';
+import { ShopAllComponent } from './Pages/Shop Pages/shop-all/shop-all.component';
 const routes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'About', component: AboutPageComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: '', component: HomePageComponent }, //default go to home
 
   //Shop
+  { path: 'Shop/All', component: ShopAllComponent },
   { path: 'Shop/Headwear', component: ShopHeadwearComponent },
   { path: 'Shop/Bodywear', component: ShopShirtsComponent },
   { path: 'Shop/Legwear', component: ShopPantsComponent },

@@ -43,21 +43,22 @@ export class ItemsBuildComponent {
     { name: 'raditional Chinese Shoes 2300 era', description: 'A traditional style of shoe from the 2300 era in Chinese history, perfect for costume or cultural events.', price: '$20', image: 'assets/Images/ClothingItems/FootWear/Traditional Chinese Shoes 2300 era.jpg' },
   ];
   
-
-
   addToCart(item: any) {
     console.log('Adding to cart: ', item);
   }
 
   ngOnInit() {
-    if (this.ListName === 'Headwearitems') {
-       this.List  = this.Headwearitems;
-    } else if (this.ListName === 'Shirtsitems') {
-        this.List = this.Shirtsitems;
-    } else if (this.ListName === 'Pantsitems') {
-        this.List = this.Pantsitems;
-    } else if (this.ListName === 'Shoesitems') {
-        this.List = this.Shoesitems;
-    }
+    if (this.ListName === 'Headwearitems' ||this.ListName === 'All') {
+      this.List = this.List.concat(this.Headwearitems);
+    } 
+   if (this.ListName === 'Shirtsitems' ||this.ListName === 'All') {
+    this.List = this.List.concat(this.Shirtsitems);
+  } 
+   if (this.ListName === 'Pantsitems' ||this.ListName === 'All') {
+    this.List = this.List.concat(this.Pantsitems);
+  } 
+   if (this.ListName === 'Shoesitems' ||this.ListName === 'All') {
+    this.List = this.List.concat(this.Shoesitems);
+  }
 }
 }
