@@ -2,7 +2,6 @@ table {
     width: 100%;
     border-collapse:collapse;
     margin-top: 100px;
-    
   }
   
   th,
@@ -44,11 +43,13 @@ table {
   .item-description {
       color: black;
       font-weight: bold;
+      font-size: 30px;
     }
   
   .item-price {
     color: green;
     font-weight: bold;
+    
   }
   
   .item-image {
