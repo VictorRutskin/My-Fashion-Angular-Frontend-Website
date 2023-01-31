@@ -91,3 +91,6 @@ table {
     float: right;
   }
   
+  td:hover {
+    background: rgba(222, 60, 120, 0.5);
+    }
