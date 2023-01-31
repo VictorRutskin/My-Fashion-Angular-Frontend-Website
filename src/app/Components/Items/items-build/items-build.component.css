@@ -1,96 +1,108 @@
 table {
-    width: 100%;
-    border-collapse:collapse;
-    margin-top: 100px;
-  }
-  
-  th,
-  td {
-    border-style:solid;
-    border-width: 8px;
-    border-color: #de3c78;
-    padding: 20px;
-    text-align: center;
-    font-size: 60px;
-    background-color: #7fc4fa;
-    background: rgba(222,	60	,120,0.3);
-    width: 15%;
-    height: 800px;
-  }
-  
-  th {
-    background-color: #de3c78;
-    font-weight: bold;
-    
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 100px;
+}
 
-  }
-  
-  td img {
-    width: 500px;
-    height: 500px;
-    float: top;    
-  }
-  
-  td p {
-    margin: 0;
-  }
-  
-  .item-name {
-    font-weight: bold;
-    color: #de3c78;
-    align-self:center;
-    float: top;
+th,
+td {
+  border-style: solid;
+  border-width: 8px;
+  border-color: #de3c78;
+  padding: 20px;
+  text-align: center;
+  font-size: 60px;
+  background-color: #7fc4fa;
+  background: rgba(222, 60, 120, 0.3);
+  width: 15%;
+  height: 800px;
+}
 
-  }
-  .item-description {
-      color: black;
-      font-weight: bold;
-      font-size: 30px;
-    }
-  
-  .item-price {
+th {
+  background-color: #de3c78;
+  font-weight: bold;
+}
+
+td img {
+  width: 500px;
+  height: 500px;
+  float: top;
+}
+
+td p {
+  margin: 0;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #de3c78;
+  align-self: center;
+  float: top;
+  animation: TitleNeon 6s ease-in-out infinite;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+
+@keyframes TitleNeon {
+  0% {
     color: #7fc4fa;
-    font-weight: bold;
-    font-size: 90px;
-    -webkit-text-stroke-width: 7px;
-    -webkit-text-stroke: cyan;
-    -webkit-text-stroke-color: cyan;
-    -webkit-text-stroke-width: 5px;
-    
-    animation: StaticNeonEffect 6s ease-in-out infinite;
   }
-  
-  @keyframes StaticNeonEffect {
-    0% {
-      color: blue;
-      -webkit-text-stroke-color: #7fc4fa;
-    }
-    50% {
-      color: #de3c78;
-      -webkit-text-stroke-color: pink;
-    }
-    100% {
-      color: blue;
-      -webkit-text-stroke-color: #7fc4fa;
-    }
+  50% {
+    color: #de3c78;
   }
-  
-  .item-image {
-      color: green;
-      font-weight: bold;
-      border: 5px solid #de3c78;
-      display: inline-block;
-    }
-  
-  button {
-    background-color: green;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
+  100% {
+    color: #7fc4fa;
   }
-  
-  td:hover {
-    background: rgba(222, 60, 120, 0.5);
-    }
+}
+.item-description {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.item-price {
+  color: #7fc4fa;
+  font-weight: bold;
+  font-size: 90px;
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke: cyan;
+  -webkit-text-stroke-color: cyan;
+  -webkit-text-stroke-width: 5px;
+
+  animation: StaticNeonEffect 6s ease-in-out infinite;
+}
+
+@keyframes StaticNeonEffect {
+  0% {
+    color: blue;
+    -webkit-text-stroke-color: #7fc4fa;
+  }
+  50% {
+    color: #de3c78;
+    -webkit-text-stroke-color: pink;
+  }
+  100% {
+    color: blue;
+    -webkit-text-stroke-color: #7fc4fa;
+  }
+}
+
+.item-image {
+  color: green;
+  font-weight: bold;
+  border: 5px solid #de3c78;
+  display: inline-block;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+td:hover {
+  background: rgba(222, 60, 120, 0.5);
+}
