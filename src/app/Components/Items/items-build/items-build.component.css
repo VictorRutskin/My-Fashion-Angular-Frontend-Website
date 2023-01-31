@@ -14,20 +14,21 @@ table {
     font-size: 60px;
     background-color: #7fc4fa;
     background: rgba(222,	60	,120,0.3);
-
+    width: 15%;
+    height: 800px;
   }
   
   th {
     background-color: #de3c78;
     font-weight: bold;
+    
 
   }
   
   td img {
     width: 500px;
     height: 500px;
-    margin-right: 10px;
-    float: left;
+    float: top;    
   }
   
   td p {
@@ -35,10 +36,11 @@ table {
   }
   
   .item-name {
-   padding-top: 100px;
     font-weight: bold;
     color: #de3c78;
     align-self:center;
+    float: top;
+
   }
   .item-description {
       color: black;
@@ -49,7 +51,6 @@ table {
   .item-price {
     color: green;
     font-weight: bold;
-    
   }
   
   .item-image {
