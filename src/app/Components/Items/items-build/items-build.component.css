@@ -88,21 +88,11 @@ td p {
 }
 
 .item-image {
-  color: green;
   font-weight: bold;
   border: 5px solid #de3c78;
   display: inline-block;
 }
 
-button {
-  background-color: green;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  float: right;
-}
-
-td:hover {
+td:hover  {
   background: rgba(222, 60, 120, 0.5);
 }
