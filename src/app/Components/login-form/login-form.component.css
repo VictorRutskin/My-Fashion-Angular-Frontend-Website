@@ -1,84 +1,90 @@
 form {
-    width: 500px;
-    height: 400px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 50px;
-    box-shadow: 0 0 80px #de3c78;
-    margin-top: 100px;
-    
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 0px;
-    display: block;
-    color: white;
-    font-size: 26px
-  }
-  
-  div {
-    font-weight: bold;
-    display: block;
-    color: white;
-    font-size: 16px
-  }
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
+  box-shadow: 0 0 80px #de3c78;
+  margin-top: 100px;
+}
 
-  
-   input[type="text"], input[type="password"] , input[type="email"]{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border: 3px solid #de3c78;
-    border-radius: 5px;
-    color: white; font-family: Verdana; font-weight: bold; font-size: 18px; background-color: #7fc4fa;
-    margin-top: 20px;
-  }
-  
-  input[type="checkbox"] {
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-    border: 3px solid white;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  
-  input[type="checkbox"]:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    border: 3px solid white;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  input[type="checkbox"]:checked:before {
-    transform: rotate(360deg) scale(1);
-    background-color: green;
-  }
-  
-  
+label {
+  font-weight: bold;
+  display: block;
+  color: white;
+  font-size: 26px;
+}
 
-  button {
-    background-color: #de3c78;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-margin-top: 30px;
-  }
+div {
+  font-weight: bold;
+  display: block;
+  color: red;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 3px solid #de3c78;
+  border-radius: 5px;
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #7fc4fa;
+  margin-top: 20px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 3px solid white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 20px;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border: 3px solid white;
+  transition: all 0.3s ease-in-out;
   
-  button:hover {
-    background-color: #3e8e41;
-  }
-  
-  
+}
+
+input[type="checkbox"]:checked:before {
+  transform: rotate(360deg) scale(1);
+  background-color: green;
+}
+
+button {
+  background-color: #de3c78;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.input-container {
+  height: 150px;
+}
