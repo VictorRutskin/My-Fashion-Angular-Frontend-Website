@@ -41,6 +41,7 @@ import { LoginButtonComponent } from './Components/Buttons/login-button/login-bu
 import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { LoginTitleComponent } from './Components/Titles/login-title/login-title.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -83,7 +84,7 @@ import { LoginTitleComponent } from './Components/Titles/login-title/login-title
     LoginPageComponent,
     LoginTitleComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent, RecommendedCarouselComponent],
 })

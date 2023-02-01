@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl,FormGroup,Validators,FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-login-form',
@@ -7,10 +7,29 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent {
-  username = new FormControl('', [Validators.required]);
-password = new FormControl('', [Validators.required]);
-
-  login() {
-    console.log(`Username: ${this.username} Password: ${this.password}`);
+  registerForm:any = FormGroup;
+  submitted = false;
+  constructor( private formBuilder: FormBuilder){}
+  //Add user form actions
+  get f() { return this.registerForm.controls; }
+  onSubmit() {
+    
+    this.submitted = true;
+    // stop here if form is invalid
+    if (this.registerForm.invalid) {
+        return;
+    }
+    //True if all the fields are filled
+    if(this.submitted)
+    {
+      alert("submitted!!");
+    }
+   
   }
-}
+  ngOnInit() {
+    this.registerForm = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.pattern(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)]],
+      password: ['', [Validators.required, Validators.pattern(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)]]
+    });
+  }
+  }
