@@ -1,6 +1,6 @@
 {
-  "name": "cool-website",
-  "version": "0.0.0",
+  "name": "mypackage",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "ui-carousel": "^0.2.0",
@@ -35,5 +36,22 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.9.4"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lashaka/Lashaka-Fashion-Angular-Website.git"
+  },
+  "keywords": [
+    "my",
+    "angular",
+    "website"
+  ],
+  "author": "victor rutskin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lashaka/Lashaka-Fashion-Angular-Website/issues"
+  },
+  "homepage": "https://github.com/Lashaka/Lashaka-Fashion-Angular-Website#readme"
 }
