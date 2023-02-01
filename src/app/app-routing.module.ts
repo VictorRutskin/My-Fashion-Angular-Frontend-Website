@@ -1,3 +1,4 @@
+import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-foot-wear.component';
 import { ShopPantsComponent } from './Pages/Shop Pages/shop-pants/shop-pants.component';
 import { ShopShirtsComponent } from './Pages/Shop Pages/shop-shirts/shop-shirts.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'About', component: AboutPageComponent },
   { path: 'Shop', component: ShopHeadwearComponent },
   { path: 'Contact', component: ContactPageComponent },
+  { path: 'Login', component: LoginPageComponent },
   { path: '', component: HomePageComponent }, //default go to home
 
   //Shop

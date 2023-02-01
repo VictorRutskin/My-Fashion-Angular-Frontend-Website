@@ -1,0 +1,44 @@
+form {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 0 80px #de3c78;
+    margin-top: 100px;
+    
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    font-size: 26px
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 3px solid #de3c78;
+    border-radius: 5px;
+    color: white; font-family: Verdana; font-weight: bold; font-size: 18px; background-color: #7fc4fa;
+  }
+  
+  button {
+    background-color: #de3c78;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+margin-top: 50px;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  

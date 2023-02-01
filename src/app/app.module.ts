@@ -36,6 +36,12 @@ import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-fo
 import { AddtocartButtonComponent } from './Components/Buttons/addtocart-button/addtocart-button.component';
 import { ItemsAllComponent } from './Components/Items/items-all/items-all.component';
 import { ShopAllComponent } from './Pages/Shop Pages/shop-all/shop-all.component';
+import { LoginFormComponent } from './Components/login-form/login-form.component';
+import { LoginButtonComponent } from './Components/Buttons/login-button/login-button.component';
+import { FormsModule } from '@angular/forms';
+import { LoginPageComponent } from './Pages/login-page/login-page.component';
+import { LoginTitleComponent } from './Components/Titles/login-title/login-title.component';
+
 
 @NgModule({
   declarations: [
@@ -72,8 +78,12 @@ import { ShopAllComponent } from './Pages/Shop Pages/shop-all/shop-all.component
     AddtocartButtonComponent,
     ItemsAllComponent,
     ShopAllComponent,
+    LoginFormComponent,
+    LoginButtonComponent,
+    LoginPageComponent,
+    LoginTitleComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent, RecommendedCarouselComponent],
 })

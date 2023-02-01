@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -8,6 +8,14 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 export class ButtonComponent implements OnInit {
   selectedComponent: string = 'about-us';
   spinDirection: string = '';
+  Link: string = '/Shop/All';
+
+  @Input() buttonText: string = "";
+  @Input() Content: string = "";
+  @Output() visibilityToggled = new EventEmitter<boolean>();
+
+  @ViewChild('target', { static: false, read: ElementRef }) target: ElementRef | null = null;
+  visible = false;
 
   toggleComponent() {
     if (this.Content === "1") {
@@ -22,16 +30,20 @@ export class ButtonComponent implements OnInit {
   ngOnInit() {
     this.toggleComponent();
   }
+
   toggleVisibility() {
     this.visible = !this.visible;
     this.visibilityToggled.emit(this.visible);
+
+    setTimeout(() => { //waiting for the components to load to go down to
+      this.scrollDown();
+    }, 100);  }
+
+  scrollDown(){
+    if (this.target) {
+      this.target.nativeElement.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
   }
-
-  @Input() buttonText: string = "";
-  @Input() Content: string = "";
-  @Output() visibilityToggled = new EventEmitter<boolean>();
-
-
-  visible = false;
-
 }

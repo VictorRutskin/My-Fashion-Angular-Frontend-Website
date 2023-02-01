@@ -1,0 +1,22 @@
+<form>
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" [ngModel]="username.value" (ngModelChange)="username.setValue($event)" [ngModelOptions]="{standalone: true}">
+      <div *ngIf="username && username.invalid && (username.dirty || username.touched)">
+        <div *ngIf="username.errors!['required']">
+          Username is required.
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" [ngModel]="password.value" (ngModelChange)="password.setValue($event)" [ngModelOptions]="{standalone: true}">
+      <div *ngIf="password && password.invalid && (password.dirty || password.touched)">
+        <div *ngIf="password.errors!['required']">
+          Password is required.
+        </div>
+      </div>
+    </div>
+    <button (click)="login()">Login</button>
+  </form>
+  

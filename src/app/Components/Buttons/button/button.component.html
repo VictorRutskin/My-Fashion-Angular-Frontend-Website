@@ -1,5 +1,5 @@
 <button [class]="spinDirection" class="cool-button" (click)="toggleVisibility()">{{buttonText}}</button>
 <ng-container *ngIf="visible" [ngSwitch]="selectedComponent">
-    <app-about-us *ngSwitchCase="1"></app-about-us>
-    <app-our-models *ngSwitchCase="2"></app-our-models>
-  </ng-container>
+  <app-about-us #target *ngSwitchCase="1"></app-about-us>
+  <app-our-models #target *ngSwitchCase="2"></app-our-models>
+</ng-container>
