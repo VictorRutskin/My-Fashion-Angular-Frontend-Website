@@ -42,6 +42,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { LoginTitleComponent } from './Components/Titles/login-title/login-title.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { VisitingAgentComponent } from './Components/visiting-agent/visiting-agent.component';
 
 
 @NgModule({
@@ -83,6 +84,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginButtonComponent,
     LoginPageComponent,
     LoginTitleComponent,
+    VisitingAgentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule,ReactiveFormsModule],
   providers: [],

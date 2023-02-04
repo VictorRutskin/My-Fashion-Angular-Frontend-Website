@@ -18,7 +18,7 @@
              class="form-control" id="inputPassword4">
       <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
         <div *ngIf="f.password.errors.required">Password is required</div>
-        <div *ngIf="f.password.errors.pattern">Minimum eight characters, at least one letter and one number.</div>
+        <div *ngIf="f.password.errors.pattern">Minimum eight characters.</div>
       </div>
   </div>
 

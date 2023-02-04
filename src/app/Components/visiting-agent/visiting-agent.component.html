@@ -1,0 +1,10 @@
+<ng-template [ngIf]="userType === 'admin'">
+    <p>Hello admin!</p>
+  </ng-template>
+  <ng-template [ngIf]="userType === 'user'">
+    <p>Hello user!</p>
+  </ng-template>
+  <ng-template [ngIf]="userType === 'guest'">
+    <p>Hello Guest!</p>
+  </ng-template>
+  
