@@ -19,24 +19,24 @@ export class LoginFormComponent {
   });
 
   constructor(
-    private AuthenticationService: AuthenticationService,
+    private authenticationService: AuthenticationService,
     private Router: Router
   ) {}
 
   submitForm() {
-    if (this.form.invalid) {
-      return;
-    }
-
     const username = this.form.get('username')?.value || '';
     const password = this.form.get('password')?.value || '';
 
-    this.AuthenticationService.login(username, password).subscribe(
-      (response) => {
-        this.Router.navigate(['/Shop']);
-      }
-    );
-
     console.log(username, password);
+
+    this.authenticationService
+      .login(username, password)
+      .subscribe((response: any) => {
+        this.Router.navigate(['/Shop']);
+      });
+
+    if (this.form.invalid) {
+      return;
+    }
   }
 }
