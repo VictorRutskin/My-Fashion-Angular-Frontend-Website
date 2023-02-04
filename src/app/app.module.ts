@@ -20,7 +20,7 @@ import { ItemsShirtsComponent } from './Components/Items/items-shirts/items-shir
 import { ItemsPantsComponent } from './Components/Items/items-pants/items-pants.component';
 import { ItemsShoesComponent } from './Components/Items/items-shoes/items-shoes.component';
 import { ItemsBuildComponent } from './Components/Items/items-build/items-build.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { HomeTitleComponent } from './Components/Titles/home-title/home-title.component';
 import { AboutTitleComponent } from './Components/Titles/about-title/about-title.component';
 import { ShopTitleComponent } from './Components/Titles/shop-title/shop-title.component';
