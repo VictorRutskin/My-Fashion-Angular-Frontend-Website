@@ -1,38 +1,37 @@
-<form (ngSubmit)="submitForm()" [formGroup]="form" autocomplete="off">
-  <div style="display: flex; justify-content: center">
-    <div class="form-container">
-      <h1>Login</h1>
-
-      <!-- Username -->
-      <div>
-        <div>
-          <h2>Username</h2>
-          <input
-            matInput
-            placeholder="Ex. profanis"
-            formControlName="username"
-          />
-        </div>
-      </div>
-      <!-- /Username -->
-
-      <!-- Password -->
-      <div>
-        <div>
-          <h2>Password</h2>
-          <input
-            matInput
-            type="password"
-            placeholder="Ex. s3c3tP@ss"
-            formControlName="password"
-          />
-        </div>
-      </div>
-      <!-- /Password -->
-
-      <div>
-        <button type="submit" mat-raised-button color="primary">Login</button>
+<form [formGroup]="registerForm" (ngSubmit)="submitForm()">
+ 
+  <div class="form-floating mb-3 input-container">
+      <label for="floatingInput">Email address</label>
+      <input type="email" formControlName="email"
+             [ngClass]="{ 'is-invalid': submitted && form.email.errors }"
+             class="form-control" id="inputEmail4">
+      <div *ngIf="submitted && form.email.errors" class="invalid-feedback">
+        <div *ngIf="form.email.errors.required">Email is required</div>
+        <div *ngIf="form.email.errors.pattern">Email must be a valid email address</div>
       </div>
     </div>
+
+    <div class="form-floating mb-3 input-container">
+      <label for="floatingPassword">Password</label>
+      <input type="password" formControlName="password"
+             [ngClass]="{ 'is-invalid': submitted && form.password.errors }"
+             class="form-control" id="inputPassword4">
+      <div *ngIf="submitted && form.password.errors" class="invalid-feedback">
+        <div *ngIf="form.password.errors.required">Password is required</div>
+        <div *ngIf="form.password.errors.pattern">Minimum eight characters, at least one letter and one number.</div>
+      </div>
   </div>
+
+  <div class="form-check mb-3">
+      <label class="form-check-label" for="rememberPasswordCheck">Remember password</label>
+    <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+  </div>
+
+  <div class="d-grid">
+    <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Sign in</button>
+    <div class="text-center">
+      <a class="small" href="#">Forgot password?</a>
+    </div>
+  </div>
+
 </form>
