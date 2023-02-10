@@ -19,6 +19,14 @@ app.post("/api/authenticate", (req, res) => {
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
 
+
+
+
+
+
+
+
+
 // const bodyParser = require("body-parser");
 // const express = require("express");
 // const jwtMiddleware = require("express-jwt");
