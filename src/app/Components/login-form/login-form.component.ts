@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AuthenticationService } from 'src/app/Services/Authentication/authentication.service';
 import { Component } from '@angular/core';
@@ -22,6 +23,7 @@ export class LoginFormComponent {
   }
 
   constructor(
+    private httpClient: HttpClient,
     //private authenticationService: AuthenticationService,
     private formBuilder: FormBuilder
   ) {}
@@ -46,6 +48,19 @@ export class LoginFormComponent {
     //True if all the fields are filled
     if (this.submitted) {
       alert('submitted!!');
+
+      this.httpClient
+        .post('/submitlogin', {
+          email: this.registerForm.get('email').value,
+          password: this.registerForm.get('password').value,
+        })
+        .subscribe((response) => {
+          if (response) {
+            // handle success
+          } else {
+            // handle error
+          }
+        });
     }
   }
   ngOnInit() {

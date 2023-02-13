@@ -16,11 +16,15 @@ const routes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'About', component: AboutPageComponent },
   { path: 'Shop', component: ShopHeadwearComponent },
-  { path: 'Contact', component: ContactPageComponent , canActivate: [AuthGuard ,HasRoleGuard], data:{
-    role:'Creator',
-  }},
+  {
+    path: 'Contact',
+    component: ContactPageComponent,
+    canActivate: [AuthGuard, HasRoleGuard],
+    data: {
+      role: 'Creator',
+    },
+  },
   { path: 'Login', component: LoginPageComponent },
-  { path: '', component: HomePageComponent , canActivate: [AuthGuard] }, //default go to home
 
   //Shop
   { path: 'Shop/All', component: ShopAllComponent },
@@ -29,8 +33,8 @@ const routes: Routes = [
   { path: 'Shop/Legwear', component: ShopPantsComponent },
   { path: 'Shop/FootWear', component: ShopFootWearComponent },
 
-      // otherwise redirect to home
-      { path: '**', redirectTo: '' }
+  // otherwise redirect to home
+  { path: '**', redirectTo: 'Home' },
 ];
 
 @NgModule({

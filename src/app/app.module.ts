@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -44,7 +45,6 @@ import { LoginTitleComponent } from './Components/Titles/login-title/login-title
 import { ReactiveFormsModule } from '@angular/forms';
 import { VisitingAgentComponent } from './Components/visiting-agent/visiting-agent.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -86,7 +86,14 @@ import { VisitingAgentComponent } from './Components/visiting-agent/visiting-age
     LoginTitleComponent,
     VisitingAgentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule,ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent, RecommendedCarouselComponent],
 })
