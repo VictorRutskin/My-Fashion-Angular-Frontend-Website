@@ -45,59 +45,74 @@ import { LoginTitleComponent } from './Components/Titles/login-title/login-title
 import { ReactiveFormsModule } from '@angular/forms';
 import { VisitingAgentComponent } from './Components/visiting-agent/visiting-agent.component';
 import { ErrorInterceptor } from './Services/ErrorInterceptor/ErrorInterceptor.service';
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment } from 'src/environments/environment';
+import { Auth0LoginBtnComponent } from './Components/auth0/auth0-login-btn/auth0-login-btn.component';
+import { Auth0SignupBtnComponent } from './Components/auth0/auth0-signup-btn/auth0-signup-btn.component';
+import { Auth0LogoutBtnComponent } from './Components/auth0/auth0-logout-btn/auth0-logout-btn.component';
+import { Auth0AllComponent } from './Components/auth0/auth0-all/auth0-all.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ButtonComponent,
-    TitleComponent,
-    FooterComponent,
-    ToolbarComponent,
-    AboutUsComponent,
-    OurModelsComponent,
-    AboutUsButtonComponent,
-    OurModelButtonComponent,
-    AboutPageComponent,
-    HomePageComponent,
-    ShopPageComponent,
-    ContactPageComponent,
-    ItemsHeadwearComponent,
-    ItemsShirtsComponent,
-    ItemsPantsComponent,
-    ItemsShoesComponent,
-    ItemsBuildComponent,
-    ContactUsComponent,
-    HomeTitleComponent,
-    AboutTitleComponent,
-    ShopTitleComponent,
-    ContactTitleComponent,
-    RecommendedCarouselComponent,
-    BuyNowButtonComponent,
-    ShopNavigatorComponent,
-    ShopHeadwearComponent,
-    ShopShirtsComponent,
-    ShopPantsComponent,
-    ShopFootWearComponent,
-    AddtocartButtonComponent,
-    ItemsAllComponent,
-    ShopAllComponent,
-    LoginFormComponent,
-    LoginButtonComponent,
-    LoginPageComponent,
-    LoginTitleComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-  ],
-  providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
-  ]
-  ,
-  bootstrap: [AppComponent, RecommendedCarouselComponent],
+    declarations: [
+      
+      VisitingAgentComponent,
+        AppComponent,
+        ButtonComponent,
+        TitleComponent,
+        FooterComponent,
+        ToolbarComponent,
+        AboutUsComponent,
+        OurModelsComponent,
+        AboutUsButtonComponent,
+        OurModelButtonComponent,
+        AboutPageComponent,
+        HomePageComponent,
+        ShopPageComponent,
+        ContactPageComponent,
+        ItemsHeadwearComponent,
+        ItemsShirtsComponent,
+        ItemsPantsComponent,
+        ItemsShoesComponent,
+        ItemsBuildComponent,
+        ContactUsComponent,
+        HomeTitleComponent,
+        AboutTitleComponent,
+        ShopTitleComponent,
+        ContactTitleComponent,
+        RecommendedCarouselComponent,
+        BuyNowButtonComponent,
+        ShopNavigatorComponent,
+        ShopHeadwearComponent,
+        ShopShirtsComponent,
+        ShopPantsComponent,
+        ShopFootWearComponent,
+        AddtocartButtonComponent,
+        ItemsAllComponent,
+        ShopAllComponent,
+        LoginFormComponent,
+        LoginButtonComponent,
+        LoginPageComponent,
+        LoginTitleComponent,
+        Auth0LoginBtnComponent,
+        Auth0SignupBtnComponent,
+        Auth0LogoutBtnComponent,
+        Auth0AllComponent,
+    ],
+    providers: [
+        { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+    ],
+    bootstrap: [AppComponent, RecommendedCarouselComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        AuthModule.forRoot({
+          ...environment.auth,
+        }),        
+        
+    ]
 })
 export class AppModule {}
