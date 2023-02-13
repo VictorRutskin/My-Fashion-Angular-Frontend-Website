@@ -1,3 +1,5 @@
+import { HasRoleGuard } from './has-role.guard';
+import { AuthGuard } from './_guards/auth.guard';
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { ShopFootWearComponent } from './Pages/Shop Pages/shop-foot-wear/shop-foot-wear.component';
 import { ShopPantsComponent } from './Pages/Shop Pages/shop-pants/shop-pants.component';
@@ -14,9 +16,15 @@ const routes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'About', component: AboutPageComponent },
   { path: 'Shop', component: ShopHeadwearComponent },
-  { path: 'Contact', component: ContactPageComponent },
+  {
+    path: 'Contact',
+    component: ContactPageComponent,
+    canActivate: [AuthGuard, HasRoleGuard],
+    data: {
+      role: 'Creator',
+    },
+  },
   { path: 'Login', component: LoginPageComponent },
-  { path: '', component: HomePageComponent }, //default go to home
 
   //Shop
   { path: 'Shop/All', component: ShopAllComponent },
@@ -25,6 +33,8 @@ const routes: Routes = [
   { path: 'Shop/Legwear', component: ShopPantsComponent },
   { path: 'Shop/FootWear', component: ShopFootWearComponent },
 
+  // otherwise redirect to home
+  { path: '**', redirectTo: 'Home' },
 ];
 
 @NgModule({

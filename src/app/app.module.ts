@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -20,7 +21,7 @@ import { ItemsShirtsComponent } from './Components/Items/items-shirts/items-shir
 import { ItemsPantsComponent } from './Components/Items/items-pants/items-pants.component';
 import { ItemsShoesComponent } from './Components/Items/items-shoes/items-shoes.component';
 import { ItemsBuildComponent } from './Components/Items/items-build/items-build.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { HomeTitleComponent } from './Components/Titles/home-title/home-title.component';
 import { AboutTitleComponent } from './Components/Titles/about-title/about-title.component';
 import { ShopTitleComponent } from './Components/Titles/shop-title/shop-title.component';
@@ -42,50 +43,76 @@ import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { LoginTitleComponent } from './Components/Titles/login-title/login-title.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { VisitingAgentComponent } from './Components/visiting-agent/visiting-agent.component';
+import { ErrorInterceptor } from './Services/ErrorInterceptor/ErrorInterceptor.service';
+import { AuthModule } from '@auth0/auth0-angular';
+import { environment } from 'src/environments/environment';
+import { Auth0LoginBtnComponent } from './Components/auth0/auth0-login-btn/auth0-login-btn.component';
+import { Auth0SignupBtnComponent } from './Components/auth0/auth0-signup-btn/auth0-signup-btn.component';
+import { Auth0LogoutBtnComponent } from './Components/auth0/auth0-logout-btn/auth0-logout-btn.component';
+import { Auth0AllComponent } from './Components/auth0/auth0-all/auth0-all.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ButtonComponent,
-    TitleComponent,
-    FooterComponent,
-    ToolbarComponent,
-    AboutUsComponent,
-    OurModelsComponent,
-    AboutUsButtonComponent,
-    OurModelButtonComponent,
-    AboutPageComponent,
-    HomePageComponent,
-    ShopPageComponent,
-    ContactPageComponent,
-    ItemsHeadwearComponent,
-    ItemsShirtsComponent,
-    ItemsPantsComponent,
-    ItemsShoesComponent,
-    ItemsBuildComponent,
-    ContactUsComponent,
-    HomeTitleComponent,
-    AboutTitleComponent,
-    ShopTitleComponent,
-    ContactTitleComponent,
-    RecommendedCarouselComponent,
-    BuyNowButtonComponent,
-    ShopNavigatorComponent,
-    ShopHeadwearComponent,
-    ShopShirtsComponent,
-    ShopPantsComponent,
-    ShopFootWearComponent,
-    AddtocartButtonComponent,
-    ItemsAllComponent,
-    ShopAllComponent,
-    LoginFormComponent,
-    LoginButtonComponent,
-    LoginPageComponent,
-    LoginTitleComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule,FormsModule,ReactiveFormsModule],
-  providers: [],
-  bootstrap: [AppComponent, RecommendedCarouselComponent],
+    declarations: [
+      
+      VisitingAgentComponent,
+        AppComponent,
+        ButtonComponent,
+        TitleComponent,
+        FooterComponent,
+        ToolbarComponent,
+        AboutUsComponent,
+        OurModelsComponent,
+        AboutUsButtonComponent,
+        OurModelButtonComponent,
+        AboutPageComponent,
+        HomePageComponent,
+        ShopPageComponent,
+        ContactPageComponent,
+        ItemsHeadwearComponent,
+        ItemsShirtsComponent,
+        ItemsPantsComponent,
+        ItemsShoesComponent,
+        ItemsBuildComponent,
+        ContactUsComponent,
+        HomeTitleComponent,
+        AboutTitleComponent,
+        ShopTitleComponent,
+        ContactTitleComponent,
+        RecommendedCarouselComponent,
+        BuyNowButtonComponent,
+        ShopNavigatorComponent,
+        ShopHeadwearComponent,
+        ShopShirtsComponent,
+        ShopPantsComponent,
+        ShopFootWearComponent,
+        AddtocartButtonComponent,
+        ItemsAllComponent,
+        ShopAllComponent,
+        LoginFormComponent,
+        LoginButtonComponent,
+        LoginPageComponent,
+        LoginTitleComponent,
+        Auth0LoginBtnComponent,
+        Auth0SignupBtnComponent,
+        Auth0LogoutBtnComponent,
+        Auth0AllComponent,
+    ],
+    providers: [
+        { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+    ],
+    bootstrap: [AppComponent, RecommendedCarouselComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        AuthModule.forRoot({
+          ...environment.auth,
+        }),        
+        
+    ]
 })
 export class AppModule {}
