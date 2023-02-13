@@ -1,2 +1,8 @@
-<app-auth0-login-btn *ngIf="(auth.isAuthenticated$ | async) === false"></app-auth0-login-btn>
-<app-auth0-logout-btn *ngIf="auth.isAuthenticated$ | async"> </app-auth0-logout-btn>
+<app-auth0-login-btn
+  *ngIf="(auth.isAuthenticated$ | async) === false"
+></app-auth0-login-btn>
+<app-auth0-signup-btn
+  *ngIf="(auth.isAuthenticated$ | async) === false"
+></app-auth0-signup-btn>
+<app-auth0-logout-btn *ngIf="auth.isAuthenticated$ | async">
+</app-auth0-logout-btn>
