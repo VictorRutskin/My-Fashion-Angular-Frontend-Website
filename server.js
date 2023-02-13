@@ -59,11 +59,13 @@ app.post("/submitlogin", (req, res) => {
       // check if admin, if admin give more prievleges
 
       // res.status(200).send({ message: "Welcome admin" });
-      res.redirect(200, "/home", { message: "Welcome admin" });
+      // res.redirect(200, "/home", { message: "Welcome admin" });
+      res.status(200).json({ message: "Welcome admin" });
     } else if (user.roles === "user") {
       username = email.substring(0, email.indexOf("@"));
       //res.status(200).send({ message: "Welcome", username });
-      res.redirect(200, "/home", { message: "Welcome " + username });
+      //  res.redirect(200, "/home", { message: "Welcome " + username });
+      res.status(200).json({ message: "Welcome " + username });
     }
     // redirect to home with hello 'username'
     // res.status(200).send({ message: "Login successful" });
@@ -76,7 +78,8 @@ app.post("/submitlogin", (req, res) => {
     //res.render("login", { error: "Invalid username or password" });
 
     // res.status(401).send({ message: "Invalid email or password" });
-    res.redirect(401, "/login", { error: "Invalid email or password" });
+    //  res.redirect(401, "/login", { error: "Invalid email or password" });
+    res.status(401).json({ error: "Invalid email or password" });
   }
 });
 

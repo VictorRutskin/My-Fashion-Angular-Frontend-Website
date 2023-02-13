@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -44,6 +44,7 @@ import { LoginPageComponent } from './Pages/login-page/login-page.component';
 import { LoginTitleComponent } from './Components/Titles/login-title/login-title.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { VisitingAgentComponent } from './Components/visiting-agent/visiting-agent.component';
+import { ErrorInterceptor } from './Services/ErrorInterceptor/ErrorInterceptor.service';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,6 @@ import { VisitingAgentComponent } from './Components/visiting-agent/visiting-age
     LoginButtonComponent,
     LoginPageComponent,
     LoginTitleComponent,
-    VisitingAgentComponent,
   ],
   imports: [
     BrowserModule,
@@ -94,7 +94,10 @@ import { VisitingAgentComponent } from './Components/visiting-agent/visiting-age
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true }
+  ]
+  ,
   bootstrap: [AppComponent, RecommendedCarouselComponent],
 })
 export class AppModule {}
