@@ -15,11 +15,10 @@ import {
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.css'],
 })
-
 export class LoginFormComponent {
   registerForm: any = FormGroup;
   submitted = false;
-  errorMessage = new BehaviorSubject<string>('kekma');
+  errorMessage = new BehaviorSubject<string>('Error');
   //Add user form actions
   get form() {
     return this.registerForm.controls;
@@ -63,7 +62,7 @@ export class LoginFormComponent {
             this.router.navigate(['/login']);
           }
         });
-    } 
+    }
   }
   ngOnInit() {
     this.registerForm = this.formBuilder.group({

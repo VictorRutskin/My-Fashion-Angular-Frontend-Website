@@ -1,17 +1,16 @@
 p {
-    background-color: #de3c78;
-    border-width: 5px;
-    border-color: #7fc4fa;
-    border-radius: 5px;
-    width: 500px;
-    height: 200px;
-    font-size: 36px;
-    color: #7fc4fa;
-    position: absolute;
-    top: 70px;
-    right: 30px;
-    font-weight: bold;
-    position: fixed;   
-    border-radius: 20px;
-
+  background-color: #de3c78;
+  border-width: 5px;
+  border-color: #7fc4fa;
+  border-radius: 5px;
+  width: 500px;
+  height: 50px;
+  font-size: 36px;
+  color: #7fc4fa;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  font-weight: bold;
+  position: fixed;
+  border-radius: 20px;
 }

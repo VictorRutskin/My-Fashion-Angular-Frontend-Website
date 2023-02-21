@@ -16,14 +16,7 @@ const routes: Routes = [
   { path: 'Home', component: HomePageComponent },
   { path: 'About', component: AboutPageComponent },
   { path: 'Shop', component: ShopHeadwearComponent },
-  {
-    path: 'Contact',
-    component: ContactPageComponent,
-    canActivate: [AuthGuard, HasRoleGuard],
-    data: {
-      role: 'Creator',
-    },
-  },
+  { path: 'Contact',component: ContactPageComponent },
   { path: 'Login', component: LoginPageComponent },
 
   //Shop
@@ -42,3 +35,9 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
+
+// canActivate: [AuthGuard, HasRoleGuard],
+// data: {
+//   role: 'Creator',
+// },
